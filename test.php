@@ -4,10 +4,10 @@
 require_once 'program/include/iniset.php';
 require_once 'commonFunctions.php';
 
-//function readMail($username,$password)//'testing@mindzen.com','testing@123')
+//function readMail($username,$password)//'testing@mindzen.com','@123')
 //{
 	$username='testing@mindzen.com';
-	$password='testing@123';
+	$password='@123';
 // trigger startup plugin hook
 //$startup = $RCMAIL->plugins->exec_hook('startup', array('task' => $RCMAIL->task, 'action' => $RCMAIL->action));
 
@@ -140,5 +140,5 @@ $auth = $RCMAIL->plugins->exec_hook('authenticate', array(
 		var_dump($mailHeader);
 //}
 
-//echo readMail('testing@mindzen.com','testing@123');	
+//echo readMail('testing@mindzen.com','@123');	
 ?>
